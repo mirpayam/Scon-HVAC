@@ -1,17 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Fredoka One, sans-serif;
-  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
   padding: 0;
   margin: 0;
+}
+
+.navbar .nav-pills .nav-link {
+  color: #000000;
+  font-size: 18px;
+  padding: 1rem 1.5rem;
+}
+.navbar .nav-pills .nav-link.active {
+  color: #16A180;
+  background-color: transparent;
+}
+.navbar .nav-pills .nav-item.CTA {
+  background-color: #16A180;
+  border-radius: 25px;
+}
+.navbar .nav-pills .nav-item.CTA .nav-link {
+  color: #f3f3f3;
+  font-weight: 400;
 }
 
 #Home {
   height: 100vh;
   background-image: url("../img/Plumbing_services_in_brampton_mississauga_oakville_area.jpg");
   background-size: cover;
+}
+#Home .container {
+  height: 100%;
+}
+#Home .container .row {
+  height: 100%;
+}
+#Home .container .row h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #16A180;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#AboutUs {
+  height: 100vh;
+}
+
+#ContactUs {
+  height: 100vh;
 }/*# sourceMappingURL=mian.css.map */
