@@ -24,16 +24,16 @@ body {
   transition: 0.3s all ease-in-out;
 }
 .navbar .nav-pills .nav-link:hover {
-  color: #ff7b30;
+  color: #01BAEF;
   text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2509803922);
 }
 .navbar .nav-pills .nav-link.active {
-  color: #16A180;
+  color: #01BAEF;
   background-color: transparent;
 }
 .navbar .nav-pills .nav-item.CTA {
-  background-color: #16A180;
-  border-radius: 35px;
+  background-color: #01BAEF;
+  border-radius: 0px;
   transition: 0.3s all ease-in-out;
 }
 .navbar .nav-pills .nav-item.CTA .nav-link {
@@ -50,7 +50,7 @@ body {
 
 #Home {
   height: 100vh;
-  background-image: url("../img/Plumbing_services_in_brampton_mississauga_oakville_area.jpg");
+  background-image: url("../img/HVAC_services_in_brampton_mississauga_oakville_area.jpg");
   background-size: cover;
 }
 #Home .container {
@@ -60,11 +60,13 @@ body {
   height: 100%;
 }
 #Home .container .row h1 {
+  margin-top: 5rem;
   font-size: 48px;
   font-weight: 800;
-  color: #16A180;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  color: #01BAEF;
+}
+#Home .container .row h1 a {
+  margin-top: 5rem;
 }
 #Home .container .row h1 a .pointer {
   transform: translateY(15px);
@@ -116,7 +118,7 @@ body {
   align-items: center;
 }
 #Banner .container .row .col-12 h2 {
-  color: #16A180;
+  color: #01BAEF;
   font-size: 48px;
 }
 #Banner .container .row .col-12 h2 strong {
@@ -153,7 +155,7 @@ body {
   padding: 5rem 0 8rem;
 }
 #Order .container .row h2 {
-  color: #16A180;
+  color: #01BAEF;
   font-size: 32px;
   font-weight: 900;
   text-align: center;
@@ -171,14 +173,17 @@ body {
   border: none;
   margin-bottom: 1rem;
 }
+#Order .container .row .nav .nav-item .nav-link img {
+  width: 70px;
+}
 #Order .container .row .nav .nav-item .nav-link mark {
   background-color: transparent;
-  color: #16A180;
+  color: #01BAEF;
   padding: 0;
 }
 #Order .container .row .nav .nav-item .nav-link.active {
-  border: 3px solid #16A180;
-  color: #16A180;
+  border: 3px solid #01BAEF;
+  color: #01BAEF;
 }
 #Order .container .row .tab-content {
   padding: 2rem;
@@ -193,5 +198,176 @@ body {
 }
 
 #ContactUs {
-  height: 100vh;
+  background-color: #01BAEF;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#ContactUs img {
+  margin-bottom: 2rem;
+}
+#ContactUs h4 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+#ContactUs a {
+  font-size: 45px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #616161;
+  text-align: center;
+  padding: 0.5rem;
+}
+footer p {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.feedback .feedbackCanvas {
+  font-size: 40px;
+  font-weight: 500;
+  background-color: #01BAEF;
+  border-color: #01BAEF;
+  border: 1px solid #ffffff;
+  border-left: 0;
+  padding: 0.5rem 3rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: fixed;
+  top: 35%;
+  left: 0;
+  width: 0px;
+  height: 300px;
+}
+.feedback .feedbackCanvas span {
+  transform: rotate(90deg);
+  display: block;
+}
+.feedback .offcanvas-body {
+  padding: 1rem;
+}
+.feedback .offcanvas-body h4 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.feedback .offcanvas-body p {
+  text-align: justify;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .feedback {
+    display: none;
+  }
+  .navbar {
+    transition: 0.3s all ease-in-out;
+  }
+  .navbar .nav-pills {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  #Home {
+    height: 100vh;
+    background-image: url("../img/Electrician_services_in_brampton_mississauga_oakville_area.jpg");
+    background-size: cover;
+    background-position: right center;
+  }
+  #Home .container {
+    height: 100%;
+  }
+  #Home .container .row {
+    height: 100%;
+  }
+  #Home .container .row h1 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #01BAEF;
+  }
+  #Home .container .row h1 a svg {
+    width: 100%;
+  }
+  #WhyUs .container {
+    height: 100%;
+  }
+  #WhyUs .container .row {
+    padding: 1rem 1rem;
+    height: 100%;
+    justify-content: center;
+  }
+  #WhyUs .container .row h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  #WhyUs .container .row .col-12 .row {
+    padding: 1rem;
+  }
+  #WhyUs .container .row .col-12 .row h3 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  #WhyUs .container .row .col-12 .row p {
+    font-weight: 400;
+    text-align: justify;
+  }
+  #WhyUs .container .row .col-12 .row svg {
+    width: 100%;
+  }
+  #AboutUs {
+    background-color: #D9D9D9;
+    padding: 5rem 0 0 0;
+  }
+  #AboutUs .container {
+    height: 100%;
+  }
+  #AboutUs .container .row {
+    height: 100%;
+  }
+  #AboutUs .container .row .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+  }
+  #AboutUs .container .row .col-12 h2 {
+    margin-top: 5rem;
+    font-size: 32px;
+    font-weight: 900;
+    color: #2B2B2B;
+  }
+  #AboutUs .container .row .col-12 img {
+    margin-bottom: -5rem;
+  }
+  #ContactUs {
+    background-color: #01BAEF;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #ContactUs img {
+    margin-bottom: 2rem;
+  }
+  #ContactUs h4 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  #ContactUs a {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+  }
 }/*# sourceMappingURL=mian.css.map */
